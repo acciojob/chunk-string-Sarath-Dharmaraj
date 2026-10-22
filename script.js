@@ -1,5 +1,11 @@
 function stringChop(str, size) {
   // your code here
+  let arr = []
+  while(str){
+    arr.push(str.substring(0,size))
+    str = str.substring(size, str.length)
+  }
+  return arr
 }
 
 // Do not change the code below
