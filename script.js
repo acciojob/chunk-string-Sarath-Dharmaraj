@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-  if (str.length === 0) return []
+  if (!str) return []
   let arr = []
   while(str){
     arr.push(str.substring(0,size))
